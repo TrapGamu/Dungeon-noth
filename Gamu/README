@@ -12,18 +12,20 @@ Things needed:
 Inventory
 {
 Weapons
-{
+  {
 Swords
 Staffs 
 Daggers
-}
+  }
 Potions 
 Defense 
 Accessories 
 }
+
 Rooms 
 Battle System
 {
 Magic System
 }
+
 Story 
