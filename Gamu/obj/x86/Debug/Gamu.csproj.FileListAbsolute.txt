@@ -1,5 +1,0 @@
-\\H0436SFS02\Home$\Students\9390622\My Documents\Visual Studio 2010\Projects\Gamu\Gamu\bin\Debug\Gamu.exe
-\\H0436SFS02\Home$\Students\9390622\My Documents\Visual Studio 2010\Projects\Gamu\Gamu\bin\Debug\Gamu.pdb
-\\H0436SFS02\Home$\Students\9390622\My Documents\Visual Studio 2010\Projects\Gamu\Gamu\obj\x86\Debug\Gamu.exe
-\\H0436SFS02\Home$\Students\9390622\My Documents\Visual Studio 2010\Projects\Gamu\Gamu\obj\x86\Debug\Gamu.pdb
-\\H0436SFS02\Home$\Students\9390622\My Documents\Visual Studio 2010\Projects\Gamu\Gamu\obj\x86\Debug\Gamu.csprojResolveAssemblyReference.cache
