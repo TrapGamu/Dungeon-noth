@@ -7,45 +7,40 @@ namespace Gamu
 {
     class Program
     {
+
         static void Main(string[] args)
         {
+            bool chooseclass = false;
             Player nu = new Player();
-            Console.WriteLine("Choose class");
-            Console.WriteLine("Warrior");
-            Console.WriteLine("Mage");
-            Console.WriteLine("Thief");
-            string Job = Console.ReadLine();
-            if (Job == "Warrior")
+            do
             {
-                nu.Warrior();
+                Console.WriteLine("Choose class");
+                Console.WriteLine("Warrior");
+                Console.WriteLine("Mage");
+                Console.WriteLine("Thief");
+                Player.Job = Console.ReadLine().ToUpper();
+                if (Player.Job == "WARRIOR")
+                {
+                    nu.Warrior();
+                    chooseclass = true;
+                }
+                else if (Player.Job == "MAGE")
+                {
+                    nu.Mage();
+                    chooseclass = true;
+                }
+                else if (Player.Job == "THIEF")
+                {
+                    nu.Thief();
+                    chooseclass = true;
+                }
             }
-            else if (Job == "Mage")
-            {
-                nu.Mage();
-            }
-            else if (Job == "Thief")
-            {
-                nu.Thief();
-            }
-            Console.WriteLine("You have chosen " + Job + " and these are your stats " + "HP: " + nu.MaxHP + " SP: " + nu.SP);
+            while (chooseclass == false);
+            Console.WriteLine("You have chosen " + Player.Job + " and these are your stats " + "HP: " + nu.MaxHP + " SP: " + nu.SP);
             Console.ReadLine();
         }
     }
-    public class Game
-    {
-        public void Battle()
-        {
-            Enemy[] Enemy = new Enemy[10];
-            Enemy[1] = new Enemy();
-            do
-            {
-              Console.WriteLine("You have entered battle with " + Slime + "!");
-
-            } while (Slime.MaxHP > 0);
-            
-        }
-    }
-    public class Player
+public class Player
     {
         public int CurrentHitPoints { get; set; }
         public int MaxHP { get; set; }
@@ -57,6 +52,7 @@ namespace Gamu
         public int Ability { get; set; }
         public int EXP = 0;
         public int LVL = 1;
+        public static string Job { get; set; }
         public void Warrior()
         {
             MaxHP = 50;
@@ -81,12 +77,5 @@ namespace Gamu
             Int = 5;
             Ability = 25;
         }
-        }
-    public class Enemy : Player
-    {
-        public void Enemy()
-        {
-            
-        }
     }
-    }
+}
